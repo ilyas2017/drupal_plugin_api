@@ -1,0 +1,57 @@
+# Ignore Composer dependencies
+/vendor/
+/composer.lock
+/database_volume/
+
+# Ignore environment configuration files
+.env
+
+# Ignore Docker-related files
+.dockerignore
+docker-compose.override.yml
+
+# Ignore compiled assets
+/node_modules/
+/web/sites/*/files/
+/web/sites/*/private/
+
+# Ignore temporary and cache files
+*.log
+*.tmp
+*.cache
+/tmp/
+/web/sites/default/files/js/
+/web/sites/default/files/css/
+/web/sites/default/files/php/
+/web/sites/default/files/styles/
+/web/sites/default/private/
+
+# Ignore IDE and editor files
+.idea/
+*.iml
+*.swp
+*.swo
+.vscode/
+*.DS_Store
+
+# Ignore test-related files
+/tests/output/
+
+# Ignore any system-specific files
+Thumbs.db
+.DS_Store
+
+# Ignore backup and archive files
+*.bak
+*.tar.gz
+*.zip
+*.tgz
+*.rar
+
+# Ignore Makefile-related artifacts
+Makefile~
+*.mk~
+
+# Ignore generated configuration overrides
+/web/sites/default/settings.local.php
+/web/sites/default/services.local.yml
