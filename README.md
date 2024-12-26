@@ -1,14 +1,42 @@
-<<<<<<< HEAD
 # drupal_plugin_api
 Starter Drupal project for Udemy students enrolled in the 'Mastering Drupal Plugin API' course. This repository provides a foundational setup and practical examples for learning and building custom modules using Drupal's Plugin API.
-=======
+
+## How to Install
+
+Follow these steps to set up and run the project:
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/ilyas2017/drupal_plugin_api.git
+   ```
+
+2. Navigate to the project directory:
+   ```bash
+   cd drupal_plugin_api
+   ```
+
+3. Start the Docker containers in detached mode:
+   ```bash
+   docker compose up -d
+   ```
+
+4. Access the PHP container:
+   ```bash
+   docker exec -it drupal_plugins_php bash
+   ```
+
+5. Install dependencies using Composer:
+   ```bash
+   composer install
+   ```
+
 # Docker-based Drupal stack
 
 [![Build Status](https://github.com/wodby/docker4drupal/workflows/Run%20tests/badge.svg)](https://github.com/wodby/docker4drupal/actions)
 
 ## Introduction
 
-Docker4Drupal is a set of docker images optimized for Drupal. Use `compose.yml` file from the [latest stable release](https://github.com/wodby/docker4drupal/releases) to spin up local environment on Linux, Mac OS X and Windows. 
+Docker4Drupal is a set of docker images optimized for Drupal. Use `compose.yml` file from the [latest stable release](https://github.com/wodby/docker4drupal/releases) to spin up local environment on Linux, Mac OS X and Windows.
 
 * Read the docs on [**how to use**](https://wodby.com/docs/stacks/drupal/local#usage)
 * Ask questions on [Discord](http://discord.wodby.com/)
@@ -46,7 +74,7 @@ The Drupal stack consist of the following containers:
 | phpMyAdmin      | latest                  | [phpmyadmin/phpmyadmin]      |               |                    |
 | Selenium chrome | 3.141                   | [selenium/standalone-chrome] |               |                    |
 | Traefik         | latest                  | [_/traefik]                  | ✓             | ✓                  |
- 
+
 ## Documentation
 
 Full documentation is available at https://wodby.com/docs/stacks/drupal/local.
@@ -55,7 +83,7 @@ Full documentation is available at https://wodby.com/docs/stacks/drupal/local.
 
 Images' tags format is `[VERSION]-[STABILITY_TAG]` where:
 
-`[VERSION]` is the _version of an application_ (without patch version) running in a container, e.g. `wodby/nginx:1.15-x.x.x` where Nginx version is `1.15` and `x.x.x` is a stability tag. For some images we include both major and minor version like PHP `7.2`, for others we include only major like Valkey `7`. 
+`[VERSION]` is the _version of an application_ (without patch version) running in a container, e.g. `wodby/nginx:1.15-x.x.x` where Nginx version is `1.15` and `x.x.x` is a stability tag. For some images we include both major and minor version like PHP `7.2`, for others we include only major like Valkey `7`.
 
 `[STABILITY_TAG]` is the _version of an image_ that corresponds to a git tag of the image repository, e.g. `wodby/mariadb:10.2-3.3.8` has MariaDB `10.2` and stability tag [`3.3.8`](https://github.com/wodby/mariadb/releases/tag/3.3.8). New stability tags include patch updates for applications and image's fixes/improvements (new env vars, orchestration actions fixes, etc). Stability tag changes described in the corresponding a git tag description. Stability tags follow [semantic versioning](https://semver.org/).
 
@@ -76,7 +104,7 @@ Docker4Drupal is a project designed to help you spin up local environment with D
 * [docker4wordpress](https://github.com/wodby/docker4wordpress)
 * [docker4ruby](https://github.com/wodby/docker4ruby)
 * [docker4python](https://github.com/wodby/docker4python)
-  
+
 
 ## License
 
@@ -125,4 +153,4 @@ This project is licensed under the MIT open source license.
 [wodby/webgrind]: https://hub.docker.com/r/wodby/webgrind
 [wodby/xhprof]: https://hub.docker.com/r/wodby/xhprof
 [zookeeper]: https://hub.docker.com/_/zookeeper
->>>>>>> 9e49b87f (init commit for starter drupal project for Drupal Plugin api course")
+
