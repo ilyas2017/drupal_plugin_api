@@ -3,8 +3,6 @@
 /composer.lock
 /database_volume/
 
-# Ignore environment configuration files
-.env
 
 # Ignore Docker-related files
 .dockerignore
