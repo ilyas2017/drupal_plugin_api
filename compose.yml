@@ -10,7 +10,7 @@ services:
       MYSQL_PASSWORD: $DB_PASSWORD
       MYSQL_TRANSACTION_ISOLATION: READ-COMMITTED
     volumes:
-#      - ./mariadb-init:/docker-entrypoint-initdb.d # Place init .sql file(s) here.
+      - ./mariadb-init:/docker-entrypoint-initdb.d # Place init .sql file(s) here.
       - ./database_volume:/var/lib/mysql # Use bind mount
 
   php:
